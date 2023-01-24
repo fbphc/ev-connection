@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const clientAPI = axios.create({ baseURL: "https://evconnection.herokuapp.com" });
+export const clientAPI = axios.create({ baseURL: "https://ev-c-fbphc.vercel.app/" });
 
 export const signup = (user) => clientAPI.post("/user/sign_up", user);
 
