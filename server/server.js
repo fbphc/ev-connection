@@ -16,7 +16,7 @@ import { fileURLToPath } from "url";
 
 
 const app = express();
-const PORT = process.env.PORT || 5007;
+const PORT = 5006;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename)
@@ -38,10 +38,10 @@ mongoose.connection.on("error", (error)=>{
 })
 
 /* --------------- */
-app.get("/test",(req, res)=>{
-    res.json("daje forte")
-} )
-app.use("/user", userRouter)
+app.get("/", (req, res)=>{
+    res.status(200).json("test")
+})
+
 app.use("/messages", messagesRouter)
 app.use("/openMaps", mapRouter)
 
