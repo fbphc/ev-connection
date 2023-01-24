@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const clientAPI = axios.create({ baseURL: "http://localhost:5006" });
+export const clientAPI = axios.create({ baseURL: "https://evconnection.vercel.app/" });
 
 export const signup = (user) => clientAPI.post("/user/sign_up", user);
 
