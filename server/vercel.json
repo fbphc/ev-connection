@@ -6,12 +6,11 @@
       "use": "@now/node"
     }
   ],
-  
-    "routes": [
-      {
-        "src":"/(.*)",
-        "dest": "/server.js"
-      }
-    ]
-  
+  "routes": [
+    {
+      
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ]
 }
