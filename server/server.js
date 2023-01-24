@@ -38,7 +38,9 @@ mongoose.connection.on("error", (error)=>{
 })
 
 /* --------------- */
-
+app.get("/test",(req, res)=>{
+    res.json("daje forte")
+} )
 app.use("/user", userRouter)
 app.use("/messages", messagesRouter)
 app.use("/openMaps", mapRouter)
